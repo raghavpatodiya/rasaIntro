@@ -36,3 +36,11 @@ nlu:
     - thank you
     - appreciated
     - many thanks
+
+- intent: order_pizza
+  examples: |
+   - i want to order a [pizza](food)
+   - can i get a [pizza](food)
+   - i'd like to order a [pizza](food)
+   - lets order a [pizza](food)
+   - how about a [pizza](food)

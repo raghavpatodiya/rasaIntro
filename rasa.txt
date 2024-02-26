@@ -42,10 +42,41 @@ rasa shell to run chatbot
 rasa train to train model
 
 
-
+github basics - 
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 S https://github.com/raghavpatodiya/RASAIntro.git
 git push -u origin main
+
+rules - 
+conversation flow
+fallback and clarification handling
+override default behavior
+simplify complex dialogue management 
+
+stories - 
+capturing example conversations
+
+nlu - natural language understanding
+
+rasa uses synonyms
+
+regex patterns
+[0-9]{5}
+
+key components of domain.yml - 
+intents
+entities
+responses
+actions
+slots
+forms
+templates
+
+key components of stories.yml - 
+stories
+user intents
+bot actions
+bot utterance

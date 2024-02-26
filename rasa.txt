@@ -1,0 +1,41 @@
+rasa open source framework
+converstional ai applications
+chatbots and virtual assistants
+
+rasa open source - natural language understanding, dialoque management, connect messaging channels, custom converstional channels
+
+nlu helps understand user messages
+dialoque management controls flow of the conversation
+deploy chatbots on famous chat channels such as facebook messenger
+
+free to use
+
+rasa pro
+enhanced security
+advanced observability
+scalability
+enterprise grade support
+
+benefits of rasa
+constantly evolving
+
+rasa real world cases
+
+rasa.com/docs/rasa/
+
+
+rasa nlu - intent classification, entity recognition
+intent - intent of users message
+entity - important data such as names, datres
+rasa core - management of dialoque flow
+rasa action server - handles custom action generates dynamic responses based on chatbot's logic
+
+rasa sdk
+integrating external system
+
+rasa x 
+collaborative bot development
+
+
+rasa init --no-prompt
+rasa shell to run chatbot

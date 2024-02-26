@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - inform
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey there! How can I assist you today?"
+  - text: "Hello! Welcome to our service. How may I help you?"
+  - text: "Hi! It's great to see you. What can I do for you?"
+  - text: "Greetings! How can I assist you today?"
+  - text: "Good morning! How may I help you?"
+  - text: "Good afternoon! What can I assist you with?"
+  - text: "Good evening! How may I assist you?"
+  - text: "Howdy! Welcome to our service. How can I help you?"
+  - text: "Hello there! How may I assist you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye! Have a great day!"
+  - text: "Bye! Take care!"
+  - text: "See you later! Have a nice day!"
+  - text: "See you! Take care!"
+  - text: "Talk to you later! Bye!"
+  - text: "Take care! Goodbye!"
+  - text: "Have a nice day! Goodbye!"
+  - text: "Bye bye! Take care!"
+
+  utter_affirm:
+    - text: "Great! Let me know if there's anything else I can assist you with."
+    - text: "Good to hear! Is there anything specific you'd like to know?"
+    - text: "Fantastic! How can I assist you further?"
+    - text: "Awesome! Let me know if you need any further assistance."
+    - text: "That's perfect! Is there anything else I can help you with?"
+    - text: "Excellent! How else may I assist you today?"
+
+  utter_deny:
+    - text: "No problem. Let me know if you change your mind or need any assistance."
+    - text: "Alright, just let me know if there's anything else I can help you with."
+    - text: "Understood. Feel free to reach out if you have any questions or need assistance."
+    - text: "Sure, just reach out if you need help in the future."
+    - text: "No worries. Let me know if there's anything else you need assistance with."
+
+  utter_thanks:
+    - text: "You're welcome! If you have any more questions, feel free to ask."
+    - text: "Glad I could help! Let me know if there's anything else you need."
+    - text: "No problem! Feel free to reach out if you have any further questions."
+    - text: "Anytime! Let me know if there's anything else I can assist you with."
+    - text: "You're welcome! If you need anything else, just let me know."
+
+
+  utter_inform:
+     - text: "Sure! Let me assist you with booking a flight. Please provide me with your departure and destination details."
+     - text: "Of course! I can provide information about our products. Which product are you interested in?"
+     - text: "Sure! Our office hours are from 9 AM to 5 PM, Monday through Friday."
+     - text: "Certainly! The weather today is sunny with a high of 75°F."
+     - text: "Absolutely! The nearest ATM is located at [location]. Would you like directions?"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

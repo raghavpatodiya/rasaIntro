@@ -39,3 +39,13 @@ collaborative bot development
 
 rasa init --no-prompt
 rasa shell to run chatbot
+rasa train to train model
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+S https://github.com/raghavpatodiya/RASAIntro.git
+git push -u origin main

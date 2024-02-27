@@ -9,6 +9,9 @@ intents:
 entities:
   - food
   
+actions:
+- action_extract_food_entity
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -19,8 +22,8 @@ responses:
   utter_thank:
     - text: "You are welcome, it was my pleasure to assist you"
 
-  utter_order_pizza:
-    - text: "Sure, i will order a pizza for you"
+  # utter_order_pizza:
+  #   - text: "Sure, i will order a pizza for you"
 
 session_config:
   session_expiration_time: 60

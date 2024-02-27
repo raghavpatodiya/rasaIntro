@@ -92,3 +92,5 @@ features - lightweight, extensible, routing, templating, built in dev, RESTful s
 integrating flask with rasa - rasaFlask
 
 app.py
+
+use rasa run to run rasa api url and use chatbot

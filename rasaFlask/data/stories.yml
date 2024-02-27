@@ -28,3 +28,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ask ask_name
+  steps:
+  - intent: ask_name
+  - action: utter_ask_name

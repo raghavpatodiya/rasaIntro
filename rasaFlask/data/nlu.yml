@@ -89,3 +89,10 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_name
+  examples: |
+    - please, give me your name
+    - what is your name
+    - please provide your imformation
+    - can you tell me your name ?

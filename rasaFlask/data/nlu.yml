@@ -1,12 +1,12 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
     - hey
     - hello
     - hi
-    - hello there
+    - greetings
+    - howdy
     - good morning
     - good evening
     - moin
@@ -17,18 +17,112 @@ nlu:
     - goodevening
     - good afternoon
 
+
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+   - goodbye
+   - bye
+   - see you later
+   - take care
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - yeah
+    - sure
+    - definitely
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not really
+    - I don't think so
+    - never
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - great, thank you!
+
+- intent: ask_balance
+  examples: |
+    - What is my account balance?
+    - Can you tell me how much money I have?
+    - Show me my current balance.
+
+- intent: ask_transactions
+  examples: |
+    - Show me recent transactions
+    - Can you provide a list of my transactions?
+
+- intent: transfer_money
+- examples: |
+    - Transfer $100 to John
+    - Send money to Alice
+
+- intent: pay_bill
+  examples: |
+    - Pay my electricity bill
+    - Settle my phone bill
+
+- intent: apply_loan
+  examples: |
+    - Apply for a personal loan
+    - I need a loan for my business
+
+- intent: budget_management
+  examples: |
+    - Help me with budget management
+    - Tips for better budgeting
+
+- intent: investment_advice
+  examples: |
+    - Where should I invest my money?
+    - Give me investment recommendations
+
+- intent: stock_market_info
+  examples: |
+    - What is the current stock market status?
+    - Get information about Apple stocks
+
+- intent: insurance_details
+  examples: |
+    - Tell me about health insurance
+    - I want to know more about car insurance
+
+- intent: credit_score_check
+  examples: |
+    - Check my credit score
+    - How can I improve my credit score?
+
+- intent: mortgage_calculation
+  examples: |
+    - Calculate mortgage payments
+    - Estimate home loan repayments
+
+- intent: retirement_planning
+  examples: |
+    - Plan for retirement
+    - Retirement savings advice
+
+- intent: tax_filing_assistance
+- examples: |
+    - Help with tax filing
+    - Tips for tax deductions
+
+- intent: fraud_alert
+  examples: |
+    - Report suspicious activity
+    - Alert for fraudulent transactions
+- intent: account_closure
+  examples: |
+    - Close my account
+    - Shut down my savings account
 
 - intent: affirm
   examples: |
@@ -38,16 +132,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
 
 - intent: mood_great
   examples: |

@@ -33,3 +33,110 @@ stories:
   steps:
   - intent: ask_name
   - action: utter_ask_name
+
+- story: greet_and_goodbye
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: check_balance
+  steps:
+    - intent: ask_balance
+    - action: utter_balance_info
+
+- story: view_transactions
+  steps:
+    - intent: ask_transactions
+    - action: utter_transaction_list
+
+- story: transfer_money
+  steps:
+    - intent: transfer_money
+    - action: utter_transfer_confirmation
+
+- story: pay_bill
+  steps:
+    - intent: pay_bill
+    - action: utter_bill_payment_confirmation
+
+- story: apply_loan
+  steps:
+    - intent: apply_loan
+    - action: utter_loan_application_confirmation
+
+# - story: view_loan_details
+#   steps:
+#     - intent: ask_loan_details
+#     - action: utter_ask_loan_details  
+
+# - story: confirm_loan_application
+#   steps:
+#     - intent: affirm_loan_application
+#     - action: utter_confirm_loan_application
+
+# - story: decline_loan_application
+#   steps:
+#     - intent: deny_loan_application
+#     - action: utter_decline_loan_application
+
+# - story: ask_for_investment_advice
+#   steps:
+#     - intent: ask_investment_advice
+#     - action: utter_ask_investment_advice
+
+# - story: provide_investment_recommendations
+#   steps:
+#     - intent: provide_investment_recommendations
+#     - action: utter_provide_investment_recommendations
+
+# - story: ask_for_stock_market_info
+#   steps:
+#     - intent: ask_stock_market_info
+#     - action: utter_ask_stock_market_info
+
+# - story: provide_stock_market_info
+#   steps:
+#     - intent: provide_stock_market_info
+#     - action: utter_provide_stock_market_info
+
+# - story: ask_about_insurance
+#   steps:
+#     - intent: ask_about_insurance
+#     - action: utter_ask_about_insurance
+
+# - story: provide_insurance_details
+#   steps:
+#     - intent: provide_insurance_details
+#     - action: utter_provide_insurance_details
+
+# - story: ask_about_credit_score
+#   steps:
+#     - intent: ask_about_credit_score
+#     - action: utter_ask_about_credit_score
+
+# - story: provide_credit_score_info
+#   steps:
+#     - intent: provide_credit_score_info
+#     - action: utter_provide_credit_score_info
+
+# - story: inquire_about_tax_filing
+#   steps:
+#     - intent: inquire_about_tax_filing
+#     - action: utter_inquire_about_tax_filing
+
+# - story: provide_tax_filing_tips
+#   steps:
+#     - intent: provide_tax_filing_tips
+#     - action: utter_provide_tax_filing_tips
+
+# - story: report_fraudulent_activity
+#   steps:
+#     - intent: report_fraudulent_activity
+#     - action: utter_report_fraudulent_activity
+
+# - story: close_account
+#   steps:
+#     - intent: close_account
+#     - action: utter_close_account_confirmation

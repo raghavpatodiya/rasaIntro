@@ -5,15 +5,28 @@ intents:
   - goodbye
   - affirm
   - deny
+  - thanks
+  - ask_balance
+  - ask_transactions
+  - transfer_money
+  - pay_bill
+  - apply_loan
+  - budget_management
+  - investment_advice
+  - stock_market_info
+  - insurance_details
+  - credit_score_check
+  - mortgage_calculation
+  - retirement_planning
+  - tax_filing_assistance
+  - fraud_alert
+  - account_closure
   - mood_great
   - mood_unhappy
   - bot_challenge
   - ask_name
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -24,8 +37,65 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+
   utter_goodbye:
-  - text: "Bye"
+  - text: "Goodbye! Have a great day."
+
+  utter_affirm:
+  - text: "Sure thing!"
+
+  utter_deny:
+  - text: "No problem."
+  
+  utter_thanks:
+  - text: "You're welcome!"
+
+  utter_balance_info:
+  - text: "Your account balance is $XXXX."
+
+  utter_transaction_list:
+  - text: "Here are your recent transactions: [transaction_list]"
+
+  utter_transfer_confirmation:
+  - text: "Transfer successful. $XX has been sent to [recipient]."
+
+  utter_bill_payment_confirmation:
+  - text: "Your bill payment was successful."
+
+  utter_loan_application_confirmation:
+  - text: "Your loan application has been submitted."
+
+  utter_budget_management_tips:
+  - text: "Here are some tips for better budget management: [tips_list]"
+
+  utter_investment_recommendations:
+  - text: "Consider investing in [investment_option]."
+
+  utter_stock_market_info:
+  - text: "The current stock market status is [status]."
+
+  utter_insurance_info:
+  - text: "You can learn more about [insurance_type] on our website."
+
+  utter_credit_score_info:
+  - text: "Your current credit score is [score]."
+
+  utter_mortgage_calculation:
+  - text: "Your estimated monthly mortgage payment is $XXXX."
+
+  utter_retirement_plan:
+  - text: "Start planning for retirement as early as possible."
+
+  utter_tax_filing_tips:
+  - text: "Make sure to claim all eligible tax deductions."
+
+  utter_fraud_alert:
+  - text: "Please provide details about the suspicious activity."
+
+  utter_account_closure_confirmation:
+  - text: "Your account has been closed successfully."
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."

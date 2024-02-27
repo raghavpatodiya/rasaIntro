@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa & Flask Chatbot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .chat-sign-button {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Chatbot!</h1>
+        <button id="chat-widget-button" type="button" class="btn btn-primary rounded-circle position-fixed chat-sign-button" style="bottom: 20px; right: 20px;"></button>
+
+        <!-- Chatbox -->
+        <div id="chat-widget" class="card position-fixed shadow d-none" style="bottom: 100px; right: 20px; width: 300px;">
+            <div class="card-header bg-primary text-white">
+                Chatbot
+                <button id="chat-widget-close-button" type="button" class="btn-close float-end" aria-label="Close"></button>
+            </div>
+            <div class="card-body" id="chat-widget-messages">
+                <!-- Chat messages will append here -->
+            </div>
+            <div class="card-footer">
+                <input type="text" class="form-control" id="chat-widget-input" placeholder="Type your message....">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#chat-widget-button").on("click", function(){
+                $("#chat-widget").toggleClass("d-none");
+            });
+            $("#chat-widget-close-button").on("click", function(){
+                $("#chat-widget").addClass("d-none");
+            });
+        });
+    </script>
+</body>
+</html>

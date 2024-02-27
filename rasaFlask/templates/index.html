@@ -45,6 +45,15 @@
             $("#chat-widget-close-button").on("click", function(){
                 $("#chat-widget").addClass("d-none");
             });
+            //Handle user input in the chat box
+            $("#chat-widget-input").keypress(function(event){
+                if(event.which == 13 ){
+                    let userMessage = $('#chat-widget-input').val();
+                    $("#chat-widget-input").val("")
+                    
+                    $("#chat-widget-messages").append("<div><strong>You:</strong>"+userMessage+"</div>");
+                }
+            });
         });
     </script>
 </body>

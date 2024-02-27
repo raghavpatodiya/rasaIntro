@@ -5,12 +5,16 @@ intents:
   - goodbye
   - thank
   - order_pizza
+  - order_food
+  - inform_food
 
 entities:
   - food
   
 actions:
 - action_extract_food_entity
+- action_order_food
+- action_confirm_order
 
 responses:
   utter_greet:

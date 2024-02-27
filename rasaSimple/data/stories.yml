@@ -12,7 +12,9 @@ stories:
   - intent: thank
   - action: utter_thank
 
-- story: Order my pizza
+- story: Order my food
   steps:
-  - intent: order_pizza
-  - action: action_extract_food_entity
+  - intent: order_food
+  - action: action_order_food
+  - intent: inform_food
+  - action: action_confirm_order
